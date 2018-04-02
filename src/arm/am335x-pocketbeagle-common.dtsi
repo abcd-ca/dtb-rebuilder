@@ -491,7 +491,7 @@
 
 	/* P2_01 (ZCZ ball U14) ehrpwm1a */
 	P2_01_default_pin: pinmux_P2_01_default_pin { pinctrl-single,pins = <
-		AM33XX_IOPAD(0x0848, PIN_OUTPUT_PULLDOWN | INPUT_EN | MUX_MODE6) >; };	/* gpmc_a2.ehrpwm1a */
+		AM33XX_IOPAD(0x0848, PIN_OUTPUT | INPUT_EN | MUX_MODE7) >; };	/* gpmc_a2.ehrpwm1a */
 	P2_01_gpio_pin: pinmux_P2_01_gpio_pin { pinctrl-single,pins = <
 		AM33XX_IOPAD(0x0848, PIN_OUTPUT | INPUT_EN | MUX_MODE7) >; };		/* gpmc_a2.gpio1_18 */
 	P2_01_gpio_pu_pin: pinmux_P2_01_gpio_pu_pin { pinctrl-single,pins = <
