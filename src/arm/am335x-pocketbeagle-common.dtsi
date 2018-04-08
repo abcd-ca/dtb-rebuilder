@@ -1059,6 +1059,10 @@
 
 	ti,pmic-shutdown-controller;
 
+	pwrbutton {
+		interrupts = <TPS65217_IRQ_PB>;
+	};
+
 	regulators {
 		dcdc1_reg: regulator@0 {
 			regulator-name = "vdds_dpr";
@@ -1143,8 +1147,6 @@
 };
 
 &rtc {
-	clocks = <&clk_32768_ck>, <&clkdiv32k_ick>;
-	clock-names = "ext-clk", "int-clk";
 	system-power-controller;
 };
 
