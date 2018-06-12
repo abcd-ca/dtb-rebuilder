@@ -159,7 +159,7 @@
 
 	/* P1_06 (ZCZ ball A16) spi0_cs0 */
 	P1_06_default_pin: pinmux_P1_06_default_pin { pinctrl-single,pins = <
-		AM33XX_IOPAD(0x095c, PIN_OUTPUT_PULLUP | INPUT_EN | MUX_MODE0) >; };	/* spi0_cs0.spi0_cs0 */
+		AM33XX_IOPAD(0x095c, PIN_OUTPUT_PULLDOWN | INPUT_EN | MUX_MODE7) >; };	/* spi0_cs0.gpio0_5 */
 	P1_06_gpio_pin: pinmux_P1_06_gpio_pin { pinctrl-single,pins = <
 		AM33XX_IOPAD(0x095c, PIN_OUTPUT | INPUT_EN | MUX_MODE7) >; };		/* spi0_cs0.gpio0_5 */
 	P1_06_gpio_pu_pin: pinmux_P1_06_gpio_pu_pin { pinctrl-single,pins = <
